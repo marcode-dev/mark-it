@@ -37,6 +37,18 @@
     --cor-borda-forte: rgba(47, 27, 0, 0.2);
     --cor-input-fundo: rgba(255, 255, 255, 0.86);
     --cor-input-texto: #2c2c2c;
+    --cor-input-borda: #e0dddd;
+    --cor-texto-contraste: #2f1b00;
+    --cor-texto-postit: #363327;
+    --cor-hover-controle: rgba(47, 40, 0, 0.08);
+    --cor-selecao-tab: rgba(47, 40, 0, 0.18);
+    --cor-foco: #806b43;
+    --cor-botao-padrao: rgb(169, 162, 140);
+    --cor-botao-hover: #928b77;
+    --cor-fundo-acao: #2f1b00e4;
+    --cor-texto-botao: #fff;
+    --cor-fundo-modal: #fff;
+    --cor-hover-modal: rgba(56, 38, 0, 0.08);
     --cor-sombra: rgba(47, 27, 0, 0.08);
     --cor-card-import: linear-gradient(135deg, rgba(255, 253, 243, 0.96), rgba(255, 249, 232, 0.92));
     --cor-card-import-alt: rgba(255, 255, 255, 0.7);
@@ -173,7 +185,7 @@ header {
 }
 
 .selecao-menu h3 {
-    color: #2f1b00e4 !important;
+    color: var(--cor-texto-contraste) !important;
 }
 
 
@@ -259,7 +271,7 @@ hr {
 }
 
 .fundo-toogle {
-    background-color: white;
+    background-color: var(--cor-surface);
     border-radius: 15px;
     width: 30px;
     height: 18px;
@@ -269,7 +281,7 @@ hr {
 }
 
 .fundo-toogle .dark-mode-ativo {
-    background-color: black;
+    background-color: var(--cor-texto-contraste);
 }
 
 .bolinha-toogle {

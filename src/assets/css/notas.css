@@ -121,7 +121,7 @@
     display: flex;
     gap: 0;
     align-items: flex-end;
-    border-bottom: 1px solid rgba(47, 27, 0, 0.15);
+    border-bottom: 1px solid var(--cor-borda);
 }
 
 .tamanho-nota-inline label {
@@ -139,7 +139,7 @@
 }
 
 .tamanho-nota-inline label:hover {
-    background-color: rgba(47, 27, 0, 0.08);
+    background-color: var(--cor-hover-controle);
 }
 
 .tamanho-nota-inline input[type="radio"] {
@@ -148,8 +148,8 @@
 
 .tamanho-nota-inline input[type="radio"]:checked+span,
 .tamanho-nota-inline label:has(input:checked) {
-    background-color: rgba(47, 27, 0, 0.6);
-    color: white;
+    background-color: var(--cor-fundo-acao);
+    color: var(--cor-texto-botao);
     font-weight: 800;
     border-bottom: 2px solid var(--cor-texto-menu);
 }
@@ -184,7 +184,7 @@
 }
 
 .bolinha-filtro input:checked+.bolinha {
-    border-color: rgba(47, 27, 0, 0.55);
+    border-color: var(--cor-texto-contraste);
     transform: scale(1.3);
     opacity: 1;
 }
@@ -232,7 +232,7 @@
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #999;
+    color: var(--cor-texto-suave);
     font-weight: 600;
     margin-bottom: 4px;
     user-select: none;
@@ -255,9 +255,9 @@
 .input-legenda {
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid var(--cor-borda);
     font-size: 11px;
-    color: #555;
+    color: var(--cor-input-texto);
     font-family: "Poppins";
     width: 100%;
     padding: 2px 4px;
@@ -267,7 +267,7 @@
 
 .input-legenda:focus {
     outline: none;
-    border-bottom-color: var(--cor-texto-menu);
+    border-bottom-color: var(--cor-foco);
 }
 
 /* ---------- Post-its ---------- */
@@ -309,7 +309,7 @@
     line-height: 18px;
     overflow-wrap: break-word;
     white-space: pre-wrap;
-    color: inherit;
+    color: var(--cor-texto-postit);
 }
 
 /* ---------- Ações (ícones + seletor) ---------- */
@@ -397,19 +397,19 @@
 
 /* ---------- Classes de cor de texto ---------- */
 .texto-escuro {
-    color: var(--cor-texto-menu);
+    color: var(--cor-texto-postit);
     font-weight: 500;
 }
 
 .texto-claro {
-    color: var(--cor-texto-menu);
+    color: var(--cor-texto-postit);
     font-weight: 500;
 }
 
 /* ---------- Mensagem sem notas ---------- */
 .sem-notas {
     font-size: 13px;
-    color: #aaa;
+    color: var(--cor-texto-suave);
     padding: 20px 0;
     font-style: italic;
 }

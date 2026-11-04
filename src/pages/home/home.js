@@ -57,8 +57,6 @@ const analytics = getAnalytics(app);
     - Tornar "cancelar" elemento intangível, com a única opção de deletar
 - Notas
     - Modal "verMais" para notas grandes, com scroll interno
-    - Filtro por cor de nota
-    - Adição de legendas para cada cor personalizadas pelo usuario
     - Índices de prioridade
 
 Adaptar menu para dispositivos móveis

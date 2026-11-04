@@ -1,7 +1,6 @@
 :root {
     --background-input-tarefas: rgb(255, 253, 243);
     --input-hover: rgb(255, 253, 241);
-    --cor-botao-padrao: rgb(169, 162, 140);
 }
 
 /* ===== Container principal do diário ===== */
@@ -83,16 +82,15 @@
 }
 
 .seta-select-input {
-    background-color: white;
     border-radius: 10px;
     z-index: 10;
     display: flex;
-    background-color: var(--cor-texto-menu);
+    background-color: var(--cor-fundo-acao);
     padding: 2px 10px;
 }
 
 .seta-select-input select {
-    color: white;
+    color: var(--cor-texto-botao);
     font-size: 14px;
     width: 100%;
     height: 20px;
@@ -118,7 +116,7 @@
     font-weight: 400;
     /*background-color: var(--background-input-tarefas);*/
     background-color: transparent;
-    border: rgb(233, 233, 233) solid 1px;
+    border: 1px solid var(--cor-input-borda);
     width: 100%;
 }
 
@@ -129,9 +127,9 @@
 /* ===== Botão de salvar tarefa ===== */
 .save {
     padding: 10px 30px;
-    background-color: var(--cor-botao-padrao);
+    background-color: var(--cor-fundo-acao);
     border-radius: 10px;
-    color: white;
+    color: var(--cor-texto-botao);
     border: 0;
     font-family: "Poppins";
     font-weight: 500;
@@ -237,7 +235,7 @@
 
 
     border-radius: 7px;
-    border: 1px solid #e0dddd;
+    border: 1px solid var(--cor-input-borda);
     background-color: var(--background-input-tarefas);
     cursor: pointer;
     font-family: "Poppins";
@@ -252,7 +250,7 @@
     transform: translateY(-50%);
     pointer-events: none;
     font-size: 10px;
-    color: #555;
+    color: var(--cor-texto-suave);
 }
 
 .seta-select.select-small {
@@ -279,7 +277,7 @@ h5 {
 }
 
 .new-task {
-    background-color: var(--cor-texto-menu);
+    background-color: var(--cor-fundo-acao);
     padding: 2px 15px;
     display: flex;
     z-index: 10;
@@ -293,7 +291,7 @@ h5 {
 }
 
 .new-task p {
-    color: white;
+    color: var(--cor-texto-botao);
     font-weight: 400;
     font-size: 14px;
     user-select: none;
@@ -333,7 +331,7 @@ h5 {
     align-items: bottom;
     flex-direction: row;
     margin-top: 10px;
-    border-bottom: 1px #999999 solid;
+    border-bottom: 1px solid var(--cor-borda-forte);
 }
 
 .windows div {
@@ -346,10 +344,11 @@ h5 {
 }
 
 .windows div:hover {
-    background-color: #2f28001e;
+    background-color: var(--cor-hover-controle);
 }
 
 .windows div h4 {
+    color: var(--cor-texto-fundo-claro);
     font-weight: 300;
     cursor: default;
     font-size: 14px;
@@ -363,12 +362,12 @@ h5 {
 
 /* Ideia #1 */
 .tab-selecionada {
-    background-color: #2f280079;
-    border-bottom: var(--cor-texto-menu) 2px solid;
+    background-color: var(--cor-selecao-tab);
+    border-bottom: var(--cor-foco) 2px solid;
 }
 
 .tab-selecionada h4 {
-    color: white;
+    color: var(--cor-texto-menu);
     font-weight: 800;
 }
 
@@ -381,7 +380,9 @@ h5 {
 
 #search-diary {
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-input-borda);
+    background-color: var(--cor-input-fundo);
+    color: var(--cor-input-texto);
     padding: 3px 10px;
     outline: none;
     font-family: 'Poppins', sans-serif;
@@ -595,7 +596,7 @@ h5 {
         padding: 14px 16px 14px 18px;
         /* mais espaço interno */
         gap: 8px;
-        background-color: #fafafa;
+        background-color: var(--background-input-tarefas);
         border-radius: 12px;
         margin-top: 8px;
         padding-right: 80px;
@@ -737,7 +738,7 @@ h5 {
         min-height: 70px;
         padding: 12px;
         gap: 8px;
-        background-color: #fafafa;
+        background-color: var(--background-input-tarefas);
         border-radius: 8px;
         margin-top: 6px;
         padding-right: 56px;

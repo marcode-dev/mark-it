@@ -66,7 +66,7 @@
     height: 92px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(47, 27, 0, 0.14);
+    border: 3px solid var(--cor-borda-forte);
     box-shadow: 0 2px 8px rgba(47, 27, 0, 0.12);
 }
 
@@ -194,7 +194,7 @@
     color: var(--cor-texto-menu);
     font-weight: 600;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(47, 27, 0, 0.12);
+    border-bottom: 1px solid var(--cor-borda);
     padding-bottom: 8px;
     font-family: "Poppins";
     background: transparent;

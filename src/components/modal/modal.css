@@ -10,7 +10,7 @@
 
 /* ===== Variáveis globais usadas pelo modal ===== */
 :root {
-    --corTextoPostIt: #3f3b00
+    --corTextoPostIt: var(--cor-texto-postit);
 }
 
 /* ===== Modificações de post-it quando modal aberto ===== */
@@ -27,7 +27,7 @@
     z-index: 9;
     width: 600px;
     height: auto;
-    background-color: white;
+    background-color: var(--cor-fundo-modal);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -39,10 +39,10 @@
 
 /* ===== Variante post-it (cor amarela) ===== */
 .modal.postItTop {
-    background-color: #eee544;
+    background-color: var(--cor-postit-amarelo);
     border-radius: 15px;
     padding: 30px;
-    color: #6b6500;
+    color: var(--cor-texto-postit);
 }
 
 .modal.postItTop .titulo-modal {
@@ -101,24 +101,24 @@
 }
 
 .fechar-modal {
-    background-color: rgba(215, 215, 215, 0);
-    color: rgb(56, 56, 56);
+    background-color: transparent;
+    color: var(--cor-texto-fundo-claro);
     font-weight: 500;
 }
 
 .fechar-modal:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--cor-hover-modal);
     transition: 0.3s;
 }
 
 .salvar {
-    color: white;
-    background-color: var(--cor-texto-menu);
+    color: var(--cor-texto-botao);
+    background-color: var(--cor-fundo-acao);
     padding: 5px 10px;
 }
 
 .salvar:hover {
-    background-color: rgba(56, 38, 0, 0.807);
+    background-color: var(--cor-botao-hover);
     transition: 0.3s;
 }
 
@@ -126,14 +126,16 @@
     font-family: "Poppins";
     height: auto;
     width: 100%;
-    border: 1px solid rgb(227, 227, 227);
+    border: 1px solid var(--cor-input-borda);
     border-radius: 10px;
     font-size: 17px;
     padding: 13px 30px;
     white-space: pre-wrap;
     resize: none;
     font-weight: 400;
-    box-shadow: 3px 3px 5px rgb(224, 224, 224);
+    background-color: var(--cor-input-fundo);
+    color: var(--cor-input-texto);
+    box-shadow: 3px 3px 5px var(--cor-sombra);
 }
 
 /* ===== RESPONSIVIDADE ===== */

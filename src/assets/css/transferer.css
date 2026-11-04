@@ -152,14 +152,14 @@
 }
 
 .botao:hover {
-    background-color: #928b77;
+    background-color: var(--cor-botao-hover);
     transform: translateY(-1px);
 }
 
 .col-import {
     margin: 0;
     border: 0;
-    border-top: 1px solid rgba(47, 27, 0, 0.12);
+    border-top: 1px solid var(--cor-borda);
 }
 
 .exportar-button {

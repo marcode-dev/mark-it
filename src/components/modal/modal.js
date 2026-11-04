@@ -135,8 +135,8 @@ export function abrirModal(titulo, conteudo, idElemento, acao) {
 function fecharModal() {
     fade.style.display = "none"
     modal.style.display = "none"
-    modal.style.backgroundColor = "white"
-    modal.style.color = "black"
+    modal.style.removeProperty("background-color")
+    modal.style.removeProperty("color")
     modal.classList.remove("postItTop")
     body.style.overflow = "visible"
 }
