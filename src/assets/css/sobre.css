@@ -142,7 +142,7 @@
     box-shadow: none;
 }
 
-.sobre-espaco-imagem {
+/* .sobre-espaco-imagem {
     min-height: 220px;
     border-radius: 18px;
     border: 1px solid var(--cor-borda);
@@ -155,8 +155,8 @@
 }
 
 .sobre-imagem-caderno {
-    background-image: linear-gradient(135deg, rgba(255, 247, 214, 0.55), rgba(149, 110, 63, 0.25)), url('https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80');
-}
+    background-image: url('https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80');
+} */
 
 .sobre-imagem-cafe {
     min-height: 220px;
