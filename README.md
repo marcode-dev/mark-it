@@ -2,6 +2,23 @@
 
 Mark-It é um organizador pessoal inspirado no método **Bullet Journal**. A aplicação reúne tarefas do dia e notas rápidas em uma interface visual de diário, com armazenamento local e recursos para exportar e importar os dados.
 
+## Capturas de tela
+
+<p align="center">
+  <img src="screenshots/diario.png" alt="Tela do Diário com tarefas e filtros" width="800">
+</p>
+<p align="center"><em>Diário: tarefas do dia, filtros e status.</em></p>
+
+<p align="center">
+  <img src="screenshots/notas.png" alt="Tela de Notas com post-its coloridos" width="800">
+</p>
+<p align="center"><em>Notas rápidas organizadas como post-its.</em></p>
+
+<p align="center">
+  <img src="screenshots/import-export-tarefas.png" alt="Tela de gerenciamento para importar e exportar tarefas" width="800">
+</p>
+<p align="center"><em>Gerenciamento de dados com opções de importação e exportação.</em></p>
+
 ## Funcionalidades
 
 ### Diário
